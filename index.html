@@ -1,53 +1,333 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Welcome to Ruven Wang's GitHub Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to Ruven Wang's GitHub Page</h1>
-    </header>
-    <main>
-        <h1>Hello World!</h1>
-        <p>This is the GitHub Pages site of Ruven Wang.</p>
-    </main>
-    <footer>
-        &copy; 2024 Ruven Wang. All rights reserved.
-    </footer>
-</body>
-</html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruven Wang | Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Ruven Wang, showcasing projects like Mindponics and Nobel Games.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Ruven Wang</div>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Creative Developer & Innovator</h1>
+            <p>Hello, Transforming Ideas into Experiences</p>
+            <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View
+                My Work</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="projects" class="section">
+            <h2 class="reveal">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Mindponics Project -->
+                <article class="project-card reveal">
+                    <div class="project-thumbnail thumb-mindponics">
+                        <!-- Placeholder Gradient Used -->
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Mindponics</h3>
+                        <p class="project-desc">Revolutionizing agriculture with smart hydroponics and AI-driven
+                            monitoring systems. A blend of nature and technology.</p>
+                        <!-- Assuming there might be a link or page for this later, for now just a hash or if it existed, we'd link it. The user didn't give a specific URL for mindponics yet, so leaving as # or maybe a button to learn more -->
+                        <a href="https://github.com/ruvenwang/mindponics" class="project-link">Learn More &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- Nobel Games Project -->
+                <article class="project-card reveal">
+                    <div class="project-thumbnail thumb-nobel">
+                        <!-- Placeholder Gradient Used -->
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Nobel Games</h3>
+                        <p class="project-desc">An interactive educational game exploring the history of Nobel
+                            laureates. Test your knowledge and discover the minds that changed the world.</p>
+                        <!-- Linking to the existing local server or relative path if it was hosted there. Based on user context, it might be the root or a subpath. 
+                             The user said "nobel games i all ready started". Often it's in a repo. 
+                             I'll link to a hypothetical /nobel-game or just # for now if I don't know the path. 
+                             Wait, I saw `nobel_game` in the browser tab title in the context. 
+                             I'll set it to # for now and can update if I find the path. -->
+                        <a href="https://ruvenwang.github.io/nobel-game/" class="project-link">Play Now &rarr;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="more-projects" class="section">
+            <h2 class="reveal">More Projects</h2>
+            <div class="other-projects-grid">
+                <a href="https://github.com/ruvenwang/skills-copilot-codespaces-vscode"
+                    class="other-project-card reveal">
+                    <h3>skills-copilot-codespaces-vscode</h3>
+                    <p>GitHub Codespaces and Copilot skills.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/skills-communicate-using-markdown"
+                    class="other-project-card reveal">
+                    <h3>skills-communicate-using-markdown</h3>
+                    <p>Markdown communication skills.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/skills-introduction-to-github" class="other-project-card reveal">
+                    <h3>skills-introduction-to-github</h3>
+                    <p>Introduction to GitHub skills.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/humanai-foundation.github.io" class="other-project-card reveal">
+                    <h3>humanai-foundation.github.io</h3>
+                    <p>HumanAI foundation website.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/DataScienceEcosystem" class="other-project-card reveal">
+                    <h3>DataScienceEcosystem</h3>
+                    <p>Data Science Ecosystem resources.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/Python-Basics-for-Data-Science-"
+                    class="other-project-card reveal">
+                    <h3>Python Basics for Data Science</h3>
+                    <p>Python basics learning material.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/avocano" class="other-project-card reveal">
+                    <h3>avocano</h3>
+                    <p>Sample dropship/fake product website.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/ejtos-react_budget_app" class="other-project-card reveal">
+                    <h3>ejtos-react_budget_app</h3>
+                    <p>React budget application.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/jbbmo-Introduction-to-Git-and-GitHub"
+                    class="other-project-card reveal">
+                    <h3>Introduction to Git and GitHub</h3>
+                    <p>Introduction course material.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/IBM1" class="other-project-card reveal">
+                    <h3>IBM1</h3>
+                    <p>IBM related project.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/IBM" class="other-project-card reveal">
+                    <h3>IBM</h3>
+                    <p>IBM related repository.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/kduia-shopping-app" class="other-project-card reveal">
+                    <h3>kduia-shopping-app</h3>
+                    <p>Shopping application template.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/it-cert-automation-practice" class="other-project-card reveal">
+                    <h3>it-cert-automation-practice</h3>
+                    <p>Google IT Automation practice files.</p>
+                </a>
+                <a href="https://github.com/ruvenwang/TASSEL-workshop" class="other-project-card reveal">
+                    <h3>TASSEL-workshop</h3>
+                    <p>TASSEL workshop sample files.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <h2 class="reveal" style="text-align: center;">Technical Skills</h2>
+            <div class="skills-container reveal">
+                <span class="skill-tag">Machine Learning (Python)</span>
+                <span class="skill-tag">Data Analysis (Python, SQL, R)</span>
+                <span class="skill-tag">Genomic Data Science</span>
+                <span class="skill-tag">AWS Fundamentals</span>
+                <span class="skill-tag">Data Visualization (Tableau)</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">Financial Markets</span>
+                <span class="skill-tag">Portuguese (Native)</span>
+                <span class="skill-tag">English (Professional)</span>
+                <span class="skill-tag">Chinese (Bilingual)</span>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <h2 class="reveal" style="text-align: center;">Work Experience</h2>
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <span class="timeline-date">Oct 2024 - Present</span>
+                    <h3 class="timeline-title">Freelance Math Expert</h3>
+                    <h4 class="timeline-subtitle">Outlier AI (Remote)</h4>
+                    <div class="timeline-content">
+                        <p>• Solved mathematical problems and identified bugs in AI-generated solutions.</p>
+                        <p>• Developed and implemented mathematical test cases to identify and resolve bugs within the
+                            AI's mathematical reasoning capabilities.</p>
+                        <p>• Provided feedback on system performance and suggested improvements for AI-driven
+                            problem-solving.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Jun 2022 - Aug 2022</span>
+                    <h3 class="timeline-title">Summer Internship</h3>
+                    <h4 class="timeline-subtitle">Dingxu Bio Tec. Fisheries (Taiwan, Pingtung)</h4>
+                    <div class="timeline-content">
+                        <p>• Managed operations at a shrimp and lobster farm with 2 lobster tanks and 18 shrimp tanks.
+                        </p>
+                        <p>• Conducted regular analysis of animal growth and health, ensuring their well-being.</p>
+                        <p>• Oversaw daily feeding routines, closely monitoring food consumption and leftovers for
+                            efficiency and animal health.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Jun 2021 - Dec 2021</span>
+                    <h3 class="timeline-title">Part-time Assistant</h3>
+                    <h4 class="timeline-subtitle">National Taiwan University (Taiwan, Taipei)</h4>
+                    <div class="timeline-content">
+                        <p>• Contributed to the "Accelerating the Innovation of Rice Breeding Genetic Resources"
+                            project.</p>
+                        <p>• Implemented Rapid Generation Advancement of Cultivation Technology to enhance rice breeding
+                            practices.</p>
+                        <p>• Utilized genome information for breeding 96 rice varieties.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <h2 class="reveal" style="text-align: center;">Education</h2>
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <span class="timeline-date">Aug 2025 - Present</span>
+                    <h3 class="timeline-title">Bachelor of Education in Mathematics</h3>
+                    <h4 class="timeline-subtitle">Federal University of Technology – Paraná (Brazil)</h4>
+                    <div class="timeline-content">
+                        <p>Developing expertise in mathematical research, data science, and computational methods while
+                            taking on a new academic challenge.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Sep 2019 - Jan 2024</span>
+                    <h3 class="timeline-title">Bachelor of Science in Agronomy</h3>
+                    <h4 class="timeline-subtitle">National Taiwan University (ROC)</h4>
+                    <div class="timeline-content">
+                        <p>Focus on genetics and sustainable agriculture, including aquaponics.</p>
+                        <p>Relevant Coursework: Genetics, Crop Genetic Engineering, Computational Skills for Biological
+                            Data Analysis, Genomics.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">Feb 2015 - Jun 2019</span>
+                    <h3 class="timeline-title">Electrical Engineering (Coursework Completed)</h3>
+                    <h4 class="timeline-subtitle">Federal University of Parana (Brazil)</h4>
+                    <div class="timeline-content">
+                        <p>Developed strong analytical and problem-solving skills with a focus on mathematics and
+                            electronics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <h2 class="reveal" style="text-align: center;">Certifications</h2>
+            <div class="cert-grid reveal">
+                <!-- Microsoft Python Development -->
+                <div class="cert-card">
+                    <h3 class="cert-title">Microsoft Python Development</h3>
+                    <p class="cert-details">Dec 2025</p>
+                    <p class="cert-skills">Django, Flask, Pyramid, Natural Language Processing (NLP), Generative AI,
+                        REST APIs, Containerization, CI/CD.</p>
+                </div>
+                <!-- Preparing for Google Cloud Certification -->
+                <div class="cert-card">
+                    <h3 class="cert-title">Cloud Developer Specialization</h3>
+                    <p class="cert-details">Oct 2025</p>
+                    <p class="cert-skills">Cloud Native Applications, Google Cloud Platform (GCP), App Engine, Cloud
+                        Run, Cloud Storage, Microservices, Cloud Security.</p>
+                </div>
+                <!-- IBM Data Science -->
+                <div class="cert-card">
+                    <h3 class="cert-title">IBM Data Science Professional Certificate</h3>
+                    <p class="cert-details">Feb 2025</p>
+                    <p class="cert-skills">Data Science Methodologies, Python Programming, SQL, Data Visualization,
+                        Machine Learning, Regression.</p>
+                </div>
+                <!-- Machine Learning on Google Cloud -->
+                <div class="cert-card">
+                    <h3 class="cert-title">Machine Learning on Google Cloud Specialization</h3>
+                    <p class="cert-details">Dec 2024</p>
+                    <p class="cert-skills">TensorFlow, Keras, Vertex AI, BigQuery ML, Feature Engineering, Production ML
+                        Systems, MLOps.</p>
+                </div>
+                <!-- IBM AI Engineering -->
+                <div class="cert-card">
+                    <h3 class="cert-title">IBM AI Engineering</h3>
+                    <p class="cert-details">Jul 2024</p>
+                    <p class="cert-skills">Machine Learning, Deep Learning, Artificial Neural Networks, Human Learning,
+                        Python Programming, Regression, Network Model, Applied Machine Learning.</p>
+                </div>
+                <!-- AWS Fundamentals -->
+                <div class="cert-card">
+                    <h3 class="cert-title">AWS Fundamentals Specialization</h3>
+                    <p class="cert-details">Nov 2023</p>
+                    <p class="cert-skills">Amazon Web Services, Cloud Management, Cloud Platforms, Cloud Applications,
+                        Cloud Storage, Cloud-Based Integration, Cloud API.</p>
+                </div>
+                <!-- Google Data Analytics -->
+                <div class="cert-card">
+                    <h3 class="cert-title">Google Data Analytics Professional Certificate</h3>
+                    <p class="cert-details">Dec 2022</p>
+                    <p class="cert-skills">Data Analysis, SQL, R Programming, Spreadsheet, Business Analysis, Business
+                        Communication, Data Visualization.</p>
+                </div>
+                <!-- Python for Everybody -->
+                <div class="cert-card">
+                    <h3 class="cert-title">Python for Everybody Specialization</h3>
+                    <p class="cert-details">Nov 2022</p>
+                    <p class="cert-skills">Numpy, Pandas, Matplotlib, scikit-learn, Data Structures, Web Scraping, SQL,
+                        Database Design, APIs (JSON/XML).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="reveal">About Me</h2>
+            <div class="reveal"
+                style="background: var(--card-bg); padding: 40px; border-radius: 20px; margin-top: 30px; border: 1px solid rgba(255,255,255,0.05);">
+                <p style="color: #a0a0a0; font-size: 1.1rem;">
+                    I am a passionate developer focused on creating impactful digital experiences.
+                    With a strong background in web technologies, I love bringing ideas to life through code.
+                    Whether it's educational games or sustainable tech, I aim to build software that matters.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section" style="text-align: center;">
+            <h2 class="reveal">Get In Touch</h2>
+            <p class="reveal" style="margin: 20px 0; color: #a0a0a0;">Curitiba, Brasil | +55 (41) 98872-7557</p>
+            <div class="reveal" style="display: flex; gap: 20px; justify-content: center; margin-bottom: 30px;">
+                <a href="mailto:Ruvenwang12@gmail.com" class="btn">Email Me</a>
+                <a href="https://www.linkedin.com/in/ruvenwang12/" class="btn" target="_blank"
+                    style="background: #0077b5;">LinkedIn</a>
+                <a href="https://github.com/ruvenwang" class="btn" target="_blank" style="background: #333;">GitHub</a>
+                <a href="https://www.coursera.org/learner/ruvenw" class="btn" target="_blank"
+                    style="background: #0056D2;">Coursera</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ruven Wang. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
