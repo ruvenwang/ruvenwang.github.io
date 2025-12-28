@@ -166,6 +166,17 @@ nav {
     overflow: hidden;
 }
 
+.project-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-thumbnail img {
+    transform: scale(1.1);
+}
+
 /* Placeholder Gradients since image gen failed */
 .thumb-mindponics {
     background: linear-gradient(135deg, #00C6FF, #0072FF);
